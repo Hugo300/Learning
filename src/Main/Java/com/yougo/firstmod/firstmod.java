@@ -1,5 +1,6 @@
 package com.yougo.firstmod;
 import com.yougo.firstmod.handler.ConfigHandler;
+import com.yougo.firstmod.init.ModBlocks;
 import com.yougo.firstmod.init.ModItems;
 import com.yougo.firstmod.proxy.*;
 import com.yougo.firstmod.reference.Reference;
@@ -27,6 +28,7 @@ public class firstmod {
         ConfigHandler.init(e.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
         ModItems.init();
+        ModBlocks.init();
         LogHelper.info("Pre Initialization complete!");
 
     }
